@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {	
+	background-color: #8db7f2;
+	/* transition: 0.5s; */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	position: fixed;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	color: #8db7f2;
+	background-color: #34445a;
+	border: 1px solid;
+	border-radius: 0 0 20px 20px;
+}
+
+header > img {
+	width: 75px;
+}
+
+h1 {
+	margin: auto;
+	font-size: 4em;
+	font-family: "ubuntu", sans-serif;
+	font-weight: 700;
+}
+
+footer {
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	padding: 5px;
+	text-align: center;
+	font-family: "ubuntu", sans-serif;
+	color: #8db7f2;
+	background-color: #34445a;
+}
+
+button {
+	font-family: "ubuntu", sans-serif;
+	font-weight: 700;
+	color: #8db7f2;
+	background-color: #34445a;
+	border: 2px solid #8db7f2;
+	border-radius: 20px;
+}
+
+button:hover {
+	color: #34445a;
+	background-color: #8db7f2;
+	border: 2px solid #34445a;
+}
+
+button:active {
+	color: #8db7f2;
+	background-color: #34445a;
+	border: 2px solid #8db7f2;
+}
+
+#console-area {
+	display: flex;
+	padding: 12vh 2vw 2vh;
+	justify-content: space-between;
+}
+
+#console-command-area {
+	width: 80%;
+	height: 3.25em;
+	padding: 1em;
+	font-size: 1.25em;
+	font-family: "ubuntu mono", monospace;
+	border: 1px solid;
+	border-radius: 20px;
+	resize: none;
+	outline: none;
+}
+
+#console-command-area:focus {
+	border: 2px solid;	
+}
+
+#run-console {
+	width: 18.5%;
+	font-size: 1.5em;
+}
+
+#code-area {
+	display: flex;
+	margin: 0 2vw;
+	justify-content: space-between;
+}
+
+.code {
+	width: 30%;
+	height: 40vh;
+	margin: 2vh 0;
+	padding: 1em;
+	font-size: 1.25em;
+	font-family: "ubuntu mono", monospace;
+	border: 1px solid;
+	border-radius: 20px;
+	resize: none;
+	outline: none;
+}
+
+.code:focus {
+	border: 2px solid;	
+}
+
+#run-code {
+	width: 80%;
+	height: 2em;
+	margin: 0 10% 2vh;
+	font-size: 2em;
+}
+
+#preview-window {
+	width: 100%;
+	height: 100vh;
+	background-color: #ffffff;
+	border: 2px solid;
+	border-radius: 10px 10px 0 0;
+}

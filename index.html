@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Code Editor</title>
+		<!--<link rel="stylesheet" href="css/normalize.css"/>-->
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<header>
+			<!--<img>-->
+			<h1>Code Editor</h1>
+		</header>
+		<main>
+			<div id="console-area">
+				<textarea id="console-command-area" placeholder="console command"></textarea>
+				<button type="submit" id="run-console" onclick="executeCommand()">run command</button>
+			</div>
+			<div id="code-area">
+				<textarea id="html-area" class="code" placeholder="HTML code" oninput="showPreview()"></textarea>
+				<textarea id="css-area" class="code" placeholder="CSS code" oninput="showPreview()"></textarea>
+				<textarea id="js-area" class="code" placeholder="JS code"></textarea>
+			</div>
+			<button type="submit" id="run-code" onclick="runCode()">RUN</button>
+			<div id="preview-area">
+				<iframe id="preview-window"></iframe>
+			</div>
+		</main>
+		<footer>
+			<p>&copy;MBATheGamer</p>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
